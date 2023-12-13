@@ -6,13 +6,13 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, 
 	return (
 		<>
 			{showModal ? (
-				<Draggable handle=".handle">
+				<Draggable handle=".cursor-drag">
 					<div className="fixed inset-0 z-50 outline-none focus:outline-none">
 						<div className="absolute my-6 mx-auto w-full top-0 left-0">
 							{/* Content */}
 							<div className="w-[70%] aspect-[16/8] bg-almostwhite border-b-black border-r-black border-r-8 border-b-8 pr-0">
 								{/* Header */}
-								<div className="handle h-14 bg-blue border-t-purple border-l-purple border-8 border-b-deepblue border-r-deepblue p-1 flex justify-between gap-3 items-center pl-5">
+								<div className="h-14 bg-blue border-t-purple border-l-purple border-8 border-b-deepblue border-r-deepblue p-1 flex justify-between gap-3 items-center pl-5 cursor-drag">
 									<img src={icon} className="w-5 h-5" />
 									<p className="font-fixedsys text-white">{name}</p>
 									<span
@@ -38,7 +38,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, 
 								{/* Footer */}
 								<div className="flex items-center justify-end h-[32px] p-0">
 									<div className="border-l-[5px] border-black w-full h-full ml-2 border-r-[5px]"></div>
-									<div className="handle w-[32px] h-full border-4 border-r-gray border-b-gray border-t-0 border-l-0 "></div>
+									<div className="w-[32px] h-full border-4 border-r-gray border-b-gray border-t-0 border-l-0 cursor-drag "></div>
 								</div>
 							</div>
 						</div>

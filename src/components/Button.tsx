@@ -13,7 +13,7 @@ export default function Button(props: ButtonProps) {
 
 	return (
 		<span
-			className={`border-[2px] font-fixedsys ${
+			className={`border-[2px] font-fixedsys cursor-pointer ${
 				pressed ? "border-b-white border-r-white" : "border-t-white border-l-white"
 			}`}
 			onMouseDown={() => setPressed(true)}

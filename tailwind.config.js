@@ -21,5 +21,9 @@ module.exports = {
 			slightgray: "#DFDFDF",
 			almostwhite: "#F1F1F1",
 		},
+		cursor: {
+			pointer: 'url("./icons/Cursor_15.cur"), pointer',
+			drag: 'url("./icons/Cursor_10.cur"), grab',
+		},
 	},
 };
