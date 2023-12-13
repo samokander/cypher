@@ -2,6 +2,7 @@ import { useState } from "react";
 
 interface ButtonProps {
 	content: string;
+	icon: string;
 }
 
 export default function Button(props: ButtonProps) {
@@ -20,7 +21,8 @@ export default function Button(props: ButtonProps) {
 			<div
 				className={`w-max h-8 border-[3px] select-none  ${
 					pressed ? pressedStyle : defaultStyle
-				} flex justify-around items-middle px-1`}>
+				} flex justify-around items-middle px-1 gap-2`}>
+				<img src={props.icon} />
 				{props.content}
 			</div>
 		</span>
