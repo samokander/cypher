@@ -15,7 +15,7 @@ export default function Desktop() {
 			<Label icon={decoder} name="Decoder" open={setShowDecoder} />
 			<Label icon={notepad} name="Notepad" open={setShowNotepad} />
 
-			<Modal showModal={showNotepad} setShowModal={setShowNotepad} name="Decoder" icon={decoder}>
+			<Modal showModal={showNotepad} setShowModal={setShowDecoder} name="Decoder" icon={decoder}>
 				<Decoder />
 			</Modal>
 		</main>
