@@ -2,7 +2,7 @@ import React from "react";
 import { ModalProps } from "../types"; // Импортируем интерфейс
 import Draggable from "react-draggable";
 
-const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children }) => {
+const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, icon }) => {
 	return (
 		<>
 			{showModal ? (
@@ -12,8 +12,9 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children }) => {
 							{/* Content */}
 							<div className="w-[70%] aspect-[16/8] bg-almostwhite border-b-black border-r-black border-r-8 border-b-8 pr-0">
 								{/* Header */}
-								<div className="handle h-14 bg-blue border-t-purple border-l-purple border-8 border-b-deepblue border-r-deepblue p-1 flex justify-between">
-									<img />
+								<div className="handle h-14 bg-blue border-t-purple border-l-purple border-8 border-b-deepblue border-r-deepblue p-1 flex justify-between gap-3 items-center pl-5">
+									<img src={icon} className="w-5 h-5" />
+									<p className="font-fixedsys text-white">{name}</p>
 									<span
 										className="ml-auto float-right flex justify-center items-center bg-almostwhite text-black border-r-gray border-b-gray border-2 h-8 w-8 text-3xl leading-none font-semibold outline-none cursor-pointer font-fixedsys"
 										onClick={() => setShowModal(false)}>

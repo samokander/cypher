@@ -1,4 +1,4 @@
-export default function Notepad() {
+export default function Decoder() {
 	return (
 		<div className="w-full flex justify-center">
 			<div className="flex flex-row flex-wrap gap-32 justify-center items-center w-full">

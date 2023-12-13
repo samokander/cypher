@@ -4,7 +4,7 @@ import notepad from "../icons/notepad_icon.png";
 import Modal from "./Modal";
 
 import { useState } from "react";
-import Notepad from "./Notepad";
+import Decoder from "./Decoder";
 
 export default function Desktop() {
 	const [showNotepad, setShowNotepad] = useState(false);
@@ -15,8 +15,8 @@ export default function Desktop() {
 			<Label icon={decoder} name="Decoder" open={setShowDecoder} />
 			<Label icon={notepad} name="Notepad" open={setShowNotepad} />
 
-			<Modal showModal={showNotepad} setShowModal={setShowNotepad}>
-				<Notepad />
+			<Modal showModal={showNotepad} setShowModal={setShowNotepad} name="Decoder" icon={decoder}>
+				<Decoder />
 			</Modal>
 		</main>
 	);
