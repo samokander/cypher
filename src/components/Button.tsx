@@ -12,15 +12,15 @@ export default function Button(props: ButtonProps) {
 
 	return (
 		<span
-			className={`border-[2px] ${
-				pressed ? "border-b-white border-r-white" : "border-t-white border-l-white font-fixedsys"
+			className={`border-[2px] font-fixedsys ${
+				pressed ? "border-b-white border-r-white" : "border-t-white border-l-white"
 			}`}
 			onMouseDown={() => setPressed(true)}
 			onMouseUp={() => setPressed(false)}>
 			<div
-				className={`w-40 h-10 border-[3px] ${
+				className={`w-max h-8 border-[3px] select-none  ${
 					pressed ? pressedStyle : defaultStyle
-				} flex justify-around items-middle p-1`}>
+				} flex justify-around items-middle px-1`}>
 				{props.content}
 			</div>
 		</span>
