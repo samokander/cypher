@@ -23,16 +23,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children }) => {
 								<div className="bg-almostwhite h-12 border-r-gray border-b-gray border-b-8 border-r-8 outline-offset-1 border-l-almostwhite ml-2 border-l-0"></div>
 								{/* Body */}
 								<div className="border-black border-[5px] ml-2 flex flex-row h-full justify-end pl-0 border-r-0">
-									<div className="flex flex-row flex-wrap gap-32 justify-center items-center border w-full">
-										<div>
-											<label className="font-fixedsys font-medium">Input</label>
-											<textarea className="flex w-[300px] overflow-scroll p-2 resize-none h-[350px] border-b-white border-r-white bg-almostwhite border-l-gray border-t-gray border-4 justify-start items-start outline-none" />
-										</div>
-										<div>
-											<label className="font-fixedsys font-medium">Decoding</label>
-											<textarea className="flex w-[300px] overflow-scroll p-2 resize-none h-[350px] border-b-white border-r-white bg-almostwhite border-l-gray border-t-gray border-4 justify-start items-start outline-none" />
-										</div>
-									</div>
+									{children}
 									<div className="h-full w-9 flex flex-col border-l-black border-l-[5px] border-r-0">
 										<div className="w-full aspect-square bg-almostwhite border-4 border-r-gray border-b-gray border-l-0 border-t-0 outline-black outline-[5px] outline z-10 font-fixedsys text-center">
 											▲
