@@ -6,6 +6,7 @@ import Modal from "./Modal";
 import { useState } from "react";
 import Decoder from "./Decoder";
 import Notepad from "./Notepad";
+import Draggable from "react-draggable";
 
 export default function Desktop() {
 	const [showNotepad, setShowNotepad] = useState(false);
@@ -14,6 +15,7 @@ export default function Desktop() {
 	return (
 		<main className="w-full h-full flex flex-col p-6 justify-start items-start gap-5 relative">
 			<Label icon={decoder} name="Decoder" open={setShowDecoder} />
+
 			<Label icon={notepad} name="Notepad" open={setShowNotepad} />
 
 			<Modal showModal={showDecoder} setShowModal={setShowDecoder} name="Decoder" icon={decoder}>
