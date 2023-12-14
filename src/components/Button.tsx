@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 
 interface ButtonProps {
-	content: ReactNode;
+	content?: ReactNode;
 	click?: () => void;
 	icon?: string;
 }
@@ -23,8 +23,8 @@ export default function Button(props: ButtonProps) {
 			<div
 				className={`border-[3px] select-none font-normal  ${
 					pressed ? pressedStyle : defaultStyle
-				} flex justify-around items-middle px-1 gap-2 h-full`}>
-				{props.icon ? <img src={props.icon} /> : ""}
+				} flex justify-around items-center px-1 gap-2 h-full`}>
+				{props.icon ? <img src={props.icon} className="h-4 aspect-square" /> : ""}
 				{props.content}
 			</div>
 		</span>
