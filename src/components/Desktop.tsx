@@ -2,11 +2,9 @@ import Label from "./Label";
 import decoder from "../icons/decoder_icon.png";
 import notepad from "../icons/notepad_icon.png";
 import Modal from "./Modal";
-
 import { useState } from "react";
 import Decoder from "./Decoder";
 import Notepad from "./Notepad";
-import Draggable from "react-draggable";
 
 export default function Desktop() {
 	const [showNotepad, setShowNotepad] = useState(false);

@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ModalProps } from "../types"; // Импортируем интерфейс
 import Draggable from "react-draggable";
 import Button from "./Button";
 
 const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, icon }) => {
+	const nodeRef = useRef(null);
 	return (
 		<>
 			{showModal ? (
-				<Draggable handle=".cursor-drag" bounds="parent">
+				<Draggable handle=".cursor-drag" bounds="parent" nodeRef={nodeRef}>
 					{/* Content */}
-					<div className=".resize-drag w-[70%] absolute z-50 aspect-[16/8] bg-almostwhite border-b-black border-r-black border-r-8 border-b-8 pr-0 flex flex-col items-stretch touch-none[] box-border">
+					<div
+						ref={nodeRef}
+						className=".resize-drag w-[70%] absolute z-50 aspect-[16/8] bg-almostwhite border-b-black border-r-black border-r-8 border-b-8 pr-0 flex flex-col items-stretch touch-none[] box-border">
 						{/* Header */}
 						<div className="h-14 bg-blue border-t-purple border-l-purple border-8 border-b-deepblue border-r-deepblue p-2 flex justify-between gap-3 items-center pl-5 cursor-drag">
 							<div className="flex flex-row gap-3">
