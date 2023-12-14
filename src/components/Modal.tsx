@@ -43,7 +43,9 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, 
 						</div>
 						{/* Footer */}
 						<div className="flex items-center justify-end h-[32px] p-0">
-							<div className="border-l-[5px] border-black w-full h-full ml-2 border-r-[5px]"></div>
+							<div className="border-l-[5px] border-black w-full h-full ml-2 border-r-[5px] text-start pl-5 font-fixedsys font-medium text-gray py-1">
+								© Cypher
+							</div>
 							<div className="w-[32px] h-full border-4 border-r-gray border-b-gray border-t-0 border-l-0 cursor-drag "></div>
 						</div>
 					</div>
