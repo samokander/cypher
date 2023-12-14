@@ -21,7 +21,13 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, 
 								click={() => setShowModal(false)}
 							/>
 						</div>
-						<div className="bg-almostwhite h-12 border-r-gray border-b-gray border-b-8 border-r-8 outline-offset-1 border-l-almostwhite ml-2 border-l-0"></div>
+						<div className="bg-almostwhite h-12 border-r-gray border-b-gray border-b-8 border-r-8 outline-offset-1 border-l-almostwhite ml-2 border-l-0 font-fixedsys font-medium text-lg gap-5 flex flex-row items-center pl-6">
+							<p className="hover:underline select-none">File</p>
+							<p className="hover:underline select-none">Edit</p>
+							<p className="hover:underline select-none">Format</p>
+							<p className="hover:underline select-none">View</p>
+							<p className="hover:underline select-none">Help</p>
+						</div>
 						{/* Body */}
 						<div className="border-black border-[5px] ml-2 flex flex-row h-full justify-end pl-0 border-r-0">
 							{children}

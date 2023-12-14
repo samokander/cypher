@@ -41,6 +41,7 @@ export default function Decoder() {
 					<textarea
 						className="flex w-[300px] overflow-scroll p-2 resize-none h-[350px] border-b-white border-r-white bg-almostwhite border-l-gray border-t-gray border-4 justify-start items-start outline-none overflow-x-hidden"
 						value={textOutput}
+						readOnly
 					/>
 				</div>
 			</div>
