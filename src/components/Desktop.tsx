@@ -5,6 +5,7 @@ import Modal from "./Modal";
 
 import { useState } from "react";
 import Decoder from "./Decoder";
+import Notepad from "./Notepad";
 
 export default function Desktop() {
 	const [showNotepad, setShowNotepad] = useState(false);
@@ -17,6 +18,9 @@ export default function Desktop() {
 
 			<Modal showModal={showDecoder} setShowModal={setShowDecoder} name="Decoder" icon={decoder}>
 				<Decoder />
+			</Modal>
+			<Modal showModal={showNotepad} setShowModal={setShowNotepad} name="Notepad" icon={notepad}>
+				<Notepad />
 			</Modal>
 		</main>
 	);
