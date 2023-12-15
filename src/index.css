@@ -25,26 +25,28 @@ code {
 }
 
 ::-webkit-scrollbar {
-	width: 16px;
+	width: 30px;
 	height: 16px;
 }
 
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
-	background: #c0c0c0;
-	border-left: 2px solid white;
-	border-top: 2px solid white;
+	background: #f1f1f1;
+	outline: 5px solid black;
+	border-bottom: 4px solid #c0c0c0;
+	border-right: 4px solid #c0c0c0;
 }
 
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-	background: #808080;
-	border: 1px solid black;
-	border-left: 2px solid white;
-	border-top: 2px solid white;
+	background: #c0c0c0;
+	outline: 5px solid black;
+	border-bottom: 4px solid #606060;
+	border-right: 4px solid #606060;
 }
 
 /* Scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #606060;
+	background: #757575;
+	cursor: url("./icons/Cursor_15.cur"), pointer;
 }

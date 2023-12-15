@@ -1,6 +1,6 @@
 export default function Notepad() {
 	return (
-		<span className="w-full h-full font-fixedsys text-black py-6 px-5 font-normal text-lg text-center">
+		<span className="w-full h-full font-fixedsys text-black py-6 px-5 font-normal text-lg text-center overflow-y-scroll">
 			------------------------------------------------------------------------------------------------ <br />
 			01100101 01110010 01110010 01101111 01110010 <br />
 			01101110 01101111 01110100 00100000 01100110 01101111 01110101 01101110 01100100 <br /> 00110100 00110000 00110100{" "}

@@ -34,15 +34,6 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, children, name, 
 						{/* Body */}
 						<div className="border-black border-[5px] ml-2 flex flex-row h-full justify-end pl-0 border-r-0">
 							{children}
-							<div className="h-full w-9 flex flex-col border-l-black border-l-[5px] border-r-0">
-								<div className="w-full aspect-square bg-almostwhite border-4 border-r-gray border-b-gray border-l-0 border-t-0 outline-black outline-[5px] outline z-10 font-fixedsys text-center">
-									▲
-								</div>
-								<div className="bg-gray border-r-darkgray border-b-darkgray border-4 border-b-8 border-t-0 flex flex-col justify-between h-full border-l-0"></div>
-								<div className="w-full aspect-square bg-almostwhite border-4 border-r-gray border-b-gray border-l-0 border-t-0 outline-black outline-[5px] outline z-10 font-fixedsys text-center pt-1">
-									▼
-								</div>
-							</div>
 						</div>
 						{/* Footer */}
 						<div className="flex items-center justify-end h-[32px] p-0">
